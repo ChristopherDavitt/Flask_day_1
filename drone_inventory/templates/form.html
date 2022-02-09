@@ -1,0 +1,25 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="email-field">
+            {{ form.email.label }}
+            {{ form.email(class = 'form-control', placeholder= 'Place email here...') }}
+        </fieldset>
+        <fieldset id="password-field">
+            {{ form.password.label }}
+            {{ form.password(class = 'form-control', placeholder = 'Password Here...') }}
+        </fieldset>
+        <fieldset id="[password-field">
+            {{ form.confirm.label }}
+            {{ form.confirm(class = 'form-control', placeholder = 'Confirm Password Here...') }}
+        </fieldset>
+
+        <!-- Submit Button -->
+        {{ form.submit_button(class = 'btn btn-primary btn-block') }}
+        <!-- the form . thing connects us to the form.py section and calls that class attribute -->
+    </div>
+</form>
+
+
+<!-- What Im Noticing is that the form.html is the thing that actually hosts the inputs -->
+<!-- Is there a way to turn the input into something that can be easy to reference in css -->
