@@ -1,0 +1,20 @@
+{% extends 'nav_bar.html' %}
+
+{% block content %}
+
+<header class="hero-section">
+    <h3 class="header-text">Welcome to Car API! {{ current_user.email }}</h3>
+</header>
+
+<div class="container">
+    <h3>Welcome to Coding Drones to whom it may concern</h3>
+    <ul class="list-group">
+        <li class="list-group-item">Email: {{ current_user.email }}</li>
+        <li class="list-group-item">Token: {{ current_user.token }}</li>
+
+        <!-- TODO add access key -->
+    </ul>
+</div>
+
+
+{% endblock content %}
